@@ -1,0 +1,21 @@
+.services {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+    margin-left: -14rem;
+
+    h1 {
+      font-size: 6rem;
+    }
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
+}

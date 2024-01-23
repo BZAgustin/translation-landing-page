@@ -1,0 +1,53 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  position: relative;
+  background-image: url('/public/images/about-background.jpg');
+  background-size: contain;
+  overflow: hidden;
+}
+
+.about-container {
+  display: flex;
+  flex: 1;
+
+  .side-image {
+    flex: 1;
+  }
+
+  .content {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    align-items: center;
+    flex: 3;
+    background: rgb(224, 224, 224);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgb(235, 233, 240) 10%);
+    position: relative;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .content-title {
+    font-size: 2rem;
+  }
+
+  .bg-circle {
+    position: absolute;
+    top: -350px;
+    right: -350px;
+    width: 800px;
+    height: 800px;
+    opacity: 15%;
+  }
+}
+
+.stroke {
+  background-color: rgba(126, 126, 126, 0.2);
+  flex: 1;
+  height: 1px;
+}
