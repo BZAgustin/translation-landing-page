@@ -1,7 +1,7 @@
 .about {
   display: flex;
   flex-direction: column;
-  background-color: aliceblue;
+  background-color: rgb(241, 235, 245);
   position: relative;
   background-image: url('/public/images/about-background.jpg');
   background-size: contain;
@@ -33,7 +33,8 @@
   }
 
   .content-title {
-    font-size: 2rem;
+    font-size: 3rem;
+    color: rgb(39, 39, 39);
   }
 
   .bg-circle {

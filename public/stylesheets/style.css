@@ -49,6 +49,10 @@
   font-size: 1.2rem;
   padding: 1rem 4rem;
   border: none;
+  transition: 300ms;
+}
+.hero .about-button button:hover {
+  background-color: #db7a7a;
 }
 .hero .title, .hero .about-button {
   flex: 1;
@@ -69,7 +73,7 @@
 .about {
   display: flex;
   flex-direction: column;
-  background-color: aliceblue;
+  background-color: rgb(241, 235, 245);
   position: relative;
   background-image: url("/public/images/about-background.jpg");
   background-size: contain;
@@ -98,7 +102,8 @@
   text-align: center;
 }
 .about-container .content-title {
-  font-size: 2rem;
+  font-size: 3rem;
+  color: rgb(39, 39, 39);
 }
 .about-container .bg-circle {
   position: absolute;
@@ -128,16 +133,157 @@
 }
 .services .title h1 {
   font-size: 6rem;
+  color: rgb(39, 39, 39);
 }
 .services .circle {
   width: 200px;
   height: 200px;
+}
+.services .item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.services .item-container h1 {
+  font-size: 2rem;
+  color: rgb(39, 39, 39);
+}
+
+.service-list {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  flex: 1;
+}
+.service-list p {
+  font-size: 1.2rem;
+}
+
+img {
+  width: 156px;
+  height: 156px;
+  filter: drop-shadow(1px 1px 3px rgba(34, 34, 34, 0.2));
+}
+
+.experience {
+  background-color: #f1eaf5;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 4rem 10rem;
+  background-color: #f1eaf5;
+  background: radial-gradient(circle, transparent 20%, #f1eaf5 20%, #f1eaf5 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #f1eaf5 20%, #f1eaf5 80%, transparent 80%, transparent) 27.5px 27.5px, linear-gradient(#ffdddd 2.2px, transparent 2.2px) 0 -1.1px, linear-gradient(90deg, #e2ddff 2.2px, #f1eaf5 2.2px) -1.1px 0;
+  background-size: 55px 55px, 55px 55px, 27.5px 27.5px, 27.5px 27.5px;
+}
+
+.experience-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  flex: 1;
+}
+.experience-container h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(39, 39, 39);
+}
+
+.experience-title {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.companies {
+  display: grid;
+  flex: 1;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+.companies .company-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.companies .company-img img {
+  transition: 300ms;
+}
+.companies .company-img img:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
+.companies #sharp img {
+  height: 300px;
+  width: auto;
+}
+.companies #arcadia img {
+  height: 300px;
+  width: auto;
+}
+.companies #transperfect {
+  grid-column: 1/3;
+}
+.companies #transperfect img {
+  height: 300px;
+  width: auto;
+}
+
+.custom-shape-divider-top-1706026637 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1706026637 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 46px;
+  filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.1));
+}
+
+.custom-shape-divider-top-1706026637 .shape-fill {
+  fill: #EEDDCD;
+}
+
+.reviews {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.reviews .title {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  margin-right: -14rem;
+}
+.reviews .title h1 {
+  font-size: 6rem;
+  color: rgb(39, 39, 39);
+}
+.reviews .circle {
+  width: 200px;
+  height: 200px;
+}
+.reviews .stroke {
+  background-color: rgba(126, 126, 126, 0.2);
+  flex: 1;
+  height: 1px;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -154,31 +300,27 @@ header {
   gap: 8rem;
   background-color: #c94343;
 }
-
 header img {
   width: 100px;
   height: 100px;
 }
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-ul {
+header ul {
   display: flex;
   gap: 8rem;
   justify-content: space-between;
   list-style-type: none;
   font-size: 1.5rem;
 }
-
-li {
+header li {
   transition: 0.2s;
 }
+header li:hover {
+  transform: scale(1.2);
+}
 
-li:hover {
-  text-decoration: underline;
+a {
+  color: white;
+  text-decoration: none;
 }
 
 main {
@@ -228,7 +370,7 @@ button:hover {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 166px;
+  height: 100px;
   filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.1));
 }
 

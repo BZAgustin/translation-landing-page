@@ -1,0 +1,28 @@
+.reviews {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+    margin-right: -14rem;
+
+    h1 {
+      font-size: 6rem;
+      color: rgb(39, 39, 39);
+    }
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .stroke {
+    background-color: rgba(126, 126, 126, 0.2);
+    flex: 1;
+    height: 1px;
+  }
+}

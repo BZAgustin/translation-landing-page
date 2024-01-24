@@ -1,12 +1,17 @@
 @import 'partials/hero';
 @import 'partials/about';
 @import 'partials/services';
+@import 'partials/experience';
+@import 'partials/reviews';
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  // border: solid 1px red;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,32 +27,35 @@ header {
   align-items: center;
   gap: 8rem;
   background-color: #c94343;
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  ul {
+    display: flex;
+    gap: 8rem;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 1.5rem;
+  }
+  
+  li {
+    transition: 0.2s;
+  }
+  
+  li:hover {
+    transform: scale(1.2);
+  }
+
 }
 
-header img {
-  width: 100px;
-  height: 100px;
-}
+
 
 a {
   color: white;
   text-decoration: none;
-}
-
-ul {
-  display: flex;
-  gap: 8rem;
-  justify-content: space-between;
-  list-style-type: none;
-  font-size: 1.5rem;
-}
-
-li {
-  transition: 0.2s;
-}
-
-li:hover {
-  text-decoration: underline;
 }
 
 main {
@@ -97,7 +105,7 @@ button:hover {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 166px;
+  height: 100px;
   filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.1));
 }
 
