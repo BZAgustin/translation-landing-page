@@ -29,17 +29,19 @@
 }
 
 .reviews-container {
-  padding: 15rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   .card {
     display: flex;
-    width: 50%;
     gap: 3rem;
     border-radius: 48px;
     box-shadow: 1px 1px 6px rgb(0, 0, 0, 0.2);
+    margin: 2rem;
     padding: 4rem;
     background: rgb(246,239,233);
     background: linear-gradient(90deg, rgba(246,239,233,1) 0%, rgba(252,229,229,1) 100%);
+
 
     .card-side {
       flex: 1;

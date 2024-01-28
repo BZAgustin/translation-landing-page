@@ -90,26 +90,47 @@ button:hover {
   background-color: #db7979;
 }
 
-.custom-shape-divider-top-1705764813 {
+.custom-shape-divider-top-1706461937 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  transform: rotate(180deg);
-  z-index: 2;
 }
 
-.custom-shape-divider-top-1705764813 svg {
+.custom-shape-divider-top-1706461937 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 100px;
-  filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.1));
+  height: 39px;
+  z-index: 2;
+  box-shadow: inset 1px 1px rgba(0,0,0,0.3);
+  filter: drop-shadow(0px 1px 5px rgba(0,0,0,0.1));
 }
 
-.custom-shape-divider-top-1705764813 .shape-fill {
+.custom-shape-divider-top-1706461937 .shape-fill {
+  fill: #EEDDCD;
+}
+
+.custom-shape-divider-bottom-1706461568 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1706461568 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 41px;
+}
+
+.custom-shape-divider-bottom-1706461568 .shape-fill {
   fill: #EEDDCD;
 }
 
