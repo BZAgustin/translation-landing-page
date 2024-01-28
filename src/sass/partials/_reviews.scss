@@ -2,6 +2,7 @@
   padding: 4rem;
   display: flex;
   flex-direction: column;
+  gap: 4rem;
 
   .title {
     display: flex;
@@ -24,5 +25,58 @@
     background-color: rgba(126, 126, 126, 0.2);
     flex: 1;
     height: 1px;
+  }
+}
+
+.reviews-container {
+  padding: 15rem;
+
+  .card {
+    display: flex;
+    width: 50%;
+    gap: 3rem;
+    border-radius: 48px;
+    box-shadow: 1px 1px 6px rgb(0, 0, 0, 0.2);
+    padding: 4rem;
+    background: rgb(246,239,233);
+    background: linear-gradient(90deg, rgba(246,239,233,1) 0%, rgba(252,229,229,1) 100%);
+
+    .card-side {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      img {
+        border-radius: 100%;
+        background-color: white;
+      }
+    }
+
+    .card-separator {
+      background-color: rgb(161, 161, 161);
+      width: 1px;
+      height: 300px;
+      align-self: center;
+    }
+
+    .card-content {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+      p {
+        text-align: center;
+      }
+
+      img {
+        height: 50px;
+        width: auto;
+      }
+    }
   }
 }

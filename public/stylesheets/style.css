@@ -255,6 +255,7 @@ img {
   padding: 4rem;
   display: flex;
   flex-direction: column;
+  gap: 4rem;
 }
 .reviews .title {
   display: flex;
@@ -274,6 +275,52 @@ img {
   background-color: rgba(126, 126, 126, 0.2);
   flex: 1;
   height: 1px;
+}
+
+.reviews-container {
+  padding: 15rem;
+}
+.reviews-container .card {
+  display: flex;
+  width: 50%;
+  gap: 3rem;
+  border-radius: 48px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  padding: 4rem;
+  background: rgb(246, 239, 233);
+  background: linear-gradient(90deg, rgb(246, 239, 233) 0%, rgb(252, 229, 229) 100%);
+}
+.reviews-container .card .card-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.reviews-container .card .card-side img {
+  border-radius: 100%;
+  background-color: white;
+}
+.reviews-container .card .card-separator {
+  background-color: rgb(161, 161, 161);
+  width: 1px;
+  height: 300px;
+  align-self: center;
+}
+.reviews-container .card .card-content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.reviews-container .card .card-content p {
+  text-align: center;
+}
+.reviews-container .card .card-content img {
+  height: 50px;
+  width: auto;
 }
 
 * {
