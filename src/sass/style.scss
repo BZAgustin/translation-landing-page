@@ -3,6 +3,8 @@
 @import 'partials/services';
 @import 'partials/experience';
 @import 'partials/reviews';
+@import 'partials/contact';
+@import 'partials/footer';
 
 * {
   padding: 0;
@@ -25,11 +27,12 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 1rem;
   gap: 8rem;
   background-color: #c94343;
 
   img {
-    width: 100px;
+    width: 120px;
     height: 100px;
   }
 

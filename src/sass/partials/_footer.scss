@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  background-color: #c94343;
+  padding: 1rem;
+
+  .left-foot, .right-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  img {
+    width: 150px;
+    height: 140px;
+    margin-top: -5rem;
+    filter: drop-shadow(1px 1px 5px rgba(0,0,0,0.2));
+  }
+}
