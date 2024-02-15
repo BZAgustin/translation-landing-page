@@ -157,13 +157,20 @@
 .services .item-text {
   flex: 1;
 }
+.services hr {
+  width: 40%;
+  align-self: center;
+  opacity: 15%;
+}
 
 .service-list {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 4rem;
-  column-gap: 1rem;
+  row-gap: 5rem;
+  column-gap: 4rem;
   flex: 1;
 }
 .service-list p {
@@ -181,6 +188,44 @@
 }
 #bottom-row .item-text {
   flex: 0.4;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 5rem;
+  width: 70%;
+  align-self: center;
+  border-radius: 48px;
+  background: rgb(241, 235, 255);
+  background: linear-gradient(141deg, rgb(241, 228, 255) 0%, rgb(255, 243, 249) 100%);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.info-section h1 {
+  color: rgb(29, 29, 29);
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.info-section h2 {
+  font-size: 2.5rem;
+}
+.info-section p {
+  font-size: 1.4rem;
+}
+
+.info-top {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 .experience {
@@ -343,15 +388,16 @@
 
 .contact {
   display: flex;
-  background-color: #f1eaf5;
+  background-color: #faeaff;
   position: relative;
+  color: rgb(29, 29, 29);
 }
 .contact .socials {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
-  gap: 6rem;
+  gap: 3rem;
   padding: 6rem 0;
   background-color: #eed7d7;
 }
@@ -386,29 +432,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 2rem;
   flex: 1;
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 .contact .contact-info .contact-top {
   display: flex;
   flex-direction: column;
   gap: 6rem;
-}
-.contact .contact-info .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.contact .contact-info .title .circle {
-  position: absolute;
-  top: -2rem;
-  right: -6rem;
-  width: 150px;
-  height: 150px;
-}
-.contact .contact-info .title h1 {
-  font-size: 4rem;
+  margin-top: 6rem;
+  flex: 1;
 }
 .contact .contact-info .working-hours {
   display: flex;
@@ -418,6 +451,9 @@
   gap: 2rem;
 }
 .contact .contact-info .working-hours h1 {
+  font-size: 4rem;
+}
+.contact .contact-info .working-hours p {
   font-size: 2rem;
 }
 .contact .contact-bottom {
@@ -425,6 +461,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-self: center;
+  flex: 1;
+  gap: 1rem;
+  width: 30%;
+  padding: 2rem 0;
+  margin-bottom: 5rem;
+  background: rgb(241, 235, 255);
+  background: linear-gradient(141deg, rgb(241, 235, 255) 0%, rgb(246, 243, 255) 100%);
+  border-radius: 48px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.contact .contact-bottom h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 .contact .contact-list {
   display: flex;
@@ -432,6 +482,10 @@
 .contact .socials-logo img {
   width: 120px;
   height: 120px;
+  transition: 300ms;
+}
+.contact .socials-logo img:hover {
+  transform: scale(1.1);
 }
 
 footer {
@@ -450,6 +504,9 @@ footer img {
   height: 140px;
   margin-top: -5rem;
   filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.2));
+}
+footer h3 {
+  color: white;
 }
 
 * {

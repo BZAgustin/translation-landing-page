@@ -1,14 +1,15 @@
 .contact {
   display: flex;
-  background-color: #f1eaf5;
+  background-color: #faeaff;
   position: relative;
+  color: rgb(29, 29, 29);
 
   .socials {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
-    gap: 6rem;
+    gap: 3rem;
     padding: 6rem 0;
     background-color: #eed7d7;
   }
@@ -48,32 +49,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 2rem;
     flex: 1;
-    padding: 6rem 0;
+    padding: 4rem 0;
 
     .contact-top {
       display: flex;
       flex-direction: column;
       gap: 6rem;
-    }
-
-    .title {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-
-      .circle {
-        position: absolute;
-        top: -2rem;
-        right: -6rem;
-        width: 150px;
-        height: 150px;
-      }
-      
-      h1 {
-        font-size: 4rem;
-      }
+      margin-top: 6rem;
+      flex: 1;
     }
 
     .working-hours {
@@ -84,6 +69,10 @@
       gap: 2rem;
 
       h1 {
+        font-size: 4rem;
+      }
+
+      p {
         font-size: 2rem;
       }
     }
@@ -94,6 +83,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: center;
+    flex: 1;
+    gap: 1rem;
+    width: 30%;
+    padding: 2rem 0;
+    margin-bottom: 5rem;
+    background: rgb(241,235,255);
+    background: linear-gradient(141deg, rgba(241,235,255,1) 0%, rgba(246,243,255,1) 100%);
+    border-radius: 48px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
   }
 
   .contact-list {
@@ -104,6 +108,11 @@
     img {
       width: 120px;
       height: 120px;
+      transition: 300ms;
+    }
+
+    img:hover {
+      transform: scale(1.1);
     }
   }
 }
