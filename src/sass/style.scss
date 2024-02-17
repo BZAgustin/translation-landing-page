@@ -51,10 +51,7 @@ header {
   li:hover {
     transform: scale(1.2);
   }
-
 }
-
-
 
 a {
   color: white;
@@ -143,4 +140,60 @@ button:hover {
 
 .colored-dot {
   color: #c94343;
+}
+
+@media screen and (max-width: 1500px) {
+  header {
+    justify-content: baseline;
+    gap: 0;
+
+    img {
+      width: 90px;
+      height: 80px;
+    }
+
+    ul {
+      gap: 3rem;
+      font-size: 1.2rem;
+    }
+
+    button {
+      font-size: 1rem;
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    button {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  header {
+    justify-content: center;
+    padding: 2rem;
+
+    img {
+      display: none;
+    }
+  
+    ul {
+      gap: 2rem;
+      font-size: 1rem;
+      float: right;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  header {
+    ul {
+      font-size: 0.8rem;
+      gap: 1rem;
+    }
+  }
 }

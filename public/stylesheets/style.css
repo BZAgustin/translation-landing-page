@@ -376,6 +376,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 .reviews-container .card .card-content p {
@@ -384,6 +385,10 @@
 .reviews-container .card .card-content img {
   height: 50px;
   width: auto;
+}
+
+#kelly {
+  font-size: 1.2rem;
 }
 
 .contact {
@@ -639,6 +644,50 @@ button:hover {
 
 .colored-dot {
   color: #c94343;
+}
+
+@media screen and (max-width: 1500px) {
+  header {
+    justify-content: baseline;
+    gap: 0;
+  }
+  header img {
+    width: 90px;
+    height: 80px;
+  }
+  header ul {
+    gap: 3rem;
+    font-size: 1.2rem;
+  }
+  header button {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header button {
+    display: none;
+  }
+}
+@media screen and (max-width: 760px) {
+  header {
+    justify-content: center;
+    padding: 2rem;
+  }
+  header img {
+    display: none;
+  }
+  header ul {
+    gap: 2rem;
+    font-size: 1rem;
+    float: right;
+  }
+}
+@media screen and (max-width: 580px) {
+  header ul {
+    font-size: 0.8rem;
+    gap: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
