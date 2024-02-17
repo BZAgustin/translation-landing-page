@@ -19,9 +19,11 @@
   color: rgb(29, 29, 29);
   font-size: 8rem;
   line-height: 5rem;
+  transition: 300ms;
 }
 .hero .title-container h3 {
   font-size: 5rem;
+  transition: 300ms;
 }
 .hero .separator {
   display: flex;
@@ -59,7 +61,6 @@
 }
 
 .circle {
-  border-radius: 100%;
   background-color: rgb(218, 164, 164);
   width: 256px;
   height: 256px;
@@ -70,6 +71,76 @@
   color: rgb(131, 48, 48);
 }
 
+@media screen and (max-width: 1270px) {
+  .hero .title-container h1 {
+    font-size: 5rem;
+    line-height: 3rem;
+  }
+  .hero .title-container h3 {
+    font-size: 3rem;
+  }
+  .hero .title {
+    margin: -6rem 0 -5rem -13rem;
+  }
+  .hero .paragraph {
+    font-size: 1rem;
+    margin-right: 0;
+  }
+  .circle {
+    width: 186px;
+    height: 186px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .hero .title {
+    margin-top: -6rem;
+  }
+  .hero .title-container h1 {
+    font-size: 4rem;
+  }
+  .hero .title-container h3 {
+    font-size: 2rem;
+  }
+  .hero .about-button button {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero {
+    padding: 2rem;
+  }
+  .hero .title-container h1 {
+    font-size: 3rem;
+  }
+  .hero .title-container h3 {
+    font-size: 2rem;
+  }
+  .hero .title {
+    margin-left: -9rem;
+  }
+  .hero .paragraph {
+    font-size: 0.8rem;
+    margin-right: 0;
+  }
+  .circle {
+    width: 150px;
+    height: 150px;
+  }
+  .about-button {
+    margin-top: -6rem;
+    margin-bottom: -6rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .hero .title {
+    margin-left: -6rem;
+  }
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+}
 .about {
   display: flex;
   flex-direction: column;
