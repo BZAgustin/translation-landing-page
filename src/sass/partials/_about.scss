@@ -18,6 +18,7 @@
 
   .content {
     padding-top: 10rem;
+    padding-bottom: 10rem;
     display: flex;
     flex-direction: column;
     gap: 6rem;
@@ -48,7 +49,7 @@
     right: -350px;
     width: 800px;
     height: 800px;
-    opacity: 15%;
+    opacity: 10%;
   }
 }
 
@@ -56,4 +57,43 @@
   background-color: rgba(126, 126, 126, 0.2);
   flex: 1;
   height: 1px;
+}
+
+@media screen and (max-width: 1000px) {
+  .about-container {
+    .content-title {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+
+    .content {
+      background-color: #faeaff;;
+    }
+
+    .bg-circle {
+      position: absolute;
+      top: -350px;
+      right: -350px;
+      width: 600px;
+      height: 600px;
+      opacity: 10%;
+    }
+
+    .content-text {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .side-image {
+    display: none;
+  }
+
+  .about-container {
+    .content-text {
+      width: 80%;
+    }
+  }
 }

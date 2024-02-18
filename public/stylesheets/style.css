@@ -160,6 +160,7 @@
 }
 .about-container .content {
   padding-top: 10rem;
+  padding-bottom: 10rem;
   display: flex;
   flex-direction: column;
   gap: 6rem;
@@ -186,7 +187,7 @@
   right: -350px;
   width: 800px;
   height: 800px;
-  opacity: 15%;
+  opacity: 10%;
 }
 
 .stroke {
@@ -195,6 +196,33 @@
   height: 1px;
 }
 
+@media screen and (max-width: 1000px) {
+  .about-container .content-title h1 {
+    font-size: 3rem;
+  }
+  .about-container .content {
+    background-color: #faeaff;
+  }
+  .about-container .bg-circle {
+    position: absolute;
+    top: -350px;
+    right: -350px;
+    width: 600px;
+    height: 600px;
+    opacity: 10%;
+  }
+  .about-container .content-text {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .side-image {
+    display: none;
+  }
+  .about-container .content-text {
+    width: 80%;
+  }
+}
 .services {
   padding: 4rem;
   display: flex;
@@ -299,6 +327,105 @@
   gap: 4rem;
 }
 
+@media screen and (max-width: 1060px) {
+  .service-list {
+    display: flex;
+    flex-direction: column;
+  }
+  #bottom-row .item-text {
+    flex: 1;
+  }
+  .info-section {
+    padding: 3rem;
+    width: 90%;
+  }
+  .info-section h1 {
+    font-size: 3rem;
+  }
+  .info-section h2 {
+    font-size: 2rem;
+  }
+  .info-section p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .service-list img {
+    width: 128px;
+    height: auto;
+  }
+  .service-list p {
+    font-size: 1rem;
+  }
+  .services .item-container h1 {
+    font-size: 1.5rem;
+  }
+  .services .title {
+    margin-left: -11rem;
+  }
+  .services .title h1 {
+    font-size: 4rem;
+  }
+  .services .circle {
+    width: 140px;
+    height: 140px;
+  }
+  .info-section h1 {
+    font-size: 2.2rem;
+  }
+  .info-section h2 {
+    font-size: 1.5rem;
+  }
+  .info-section p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .service-list img {
+    width: 64px;
+    height: auto;
+  }
+  .service-list p {
+    font-size: 1rem;
+  }
+  .services {
+    padding: 1rem;
+  }
+  .services .item-container {
+    gap: 1rem;
+  }
+  .services .item-container h1 {
+    font-size: 1.2rem;
+  }
+  .services .item-container p {
+    font-size: 0.8rem;
+  }
+  .services .title {
+    margin-left: -6rem;
+  }
+  .services .title h1 {
+    font-size: 2.5rem;
+  }
+  .services .circle {
+    width: 100px;
+    height: 100px;
+  }
+  .info-section {
+    padding: 2rem;
+  }
+  .info-section h1 {
+    font-size: 1.5rem;
+  }
+  .info-section h2 {
+    font-size: 1.2rem;
+  }
+  .info-section p {
+    font-size: 1rem;
+  }
+  .info-section .info-list {
+    gap: 2rem;
+  }
+}
 .experience {
   display: flex;
   flex-direction: column;
