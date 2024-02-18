@@ -196,4 +196,24 @@ button:hover {
       gap: 1rem;
     }
   }
+
+  footer {
+    img {
+      width: 100px;
+      height: 90px;
+      margin-top: -3.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  footer {
+    img {
+      display: none;
+    }
+
+    .left-foot, .right-foot {
+      font-size: 0.7rem;
+    }
+  }
 }

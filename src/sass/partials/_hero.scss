@@ -166,15 +166,21 @@
 
   .about-button {
     margin-top: -6rem;
-    margin-bottom: -6rem;
+    margin-bottom: -16rem;
   }
 }
 
 @media screen and (max-width: 350px) {
   .hero {
-    
+    margin-top: -8rem;
+
     .title {
       margin-left: -6rem;
+      margin-bottom: -13rem;
+    }
+
+    .paragraph {
+      margin-bottom: -5rem;
     }
   }
 

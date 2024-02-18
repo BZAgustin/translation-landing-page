@@ -129,12 +129,19 @@
   }
   .about-button {
     margin-top: -6rem;
-    margin-bottom: -6rem;
+    margin-bottom: -16rem;
   }
 }
 @media screen and (max-width: 350px) {
+  .hero {
+    margin-top: -8rem;
+  }
   .hero .title {
     margin-left: -6rem;
+    margin-bottom: -13rem;
+  }
+  .hero .paragraph {
+    margin-bottom: -5rem;
   }
   .circle {
     width: 120px;
@@ -221,6 +228,11 @@
   }
   .about-container .content-text {
     width: 80%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .about-container .content-title h1 {
+    font-size: 2.5rem;
   }
 }
 .services {
@@ -832,6 +844,55 @@
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 1100px) {
+  .contact .contact-bottom {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .contact .contact-info .working-hours h1 {
+    font-size: 3rem;
+  }
+  .contact .contact-bottom h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .contact .contact-bottom {
+    width: 90%;
+  }
+  .contact .contact-info .contact-top {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact .contact-info .working-hours h1 {
+    font-size: 2.5rem;
+  }
+  .contact .contact-info .working-hours p {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .contact .contact-info {
+    padding-bottom: 0;
+  }
+  .contact .contact-info .contact-top {
+    margin-bottom: -15rem;
+  }
+  .contact .contact-info .working-hours h1 {
+    font-size: 2.2rem;
+  }
+  .contact .contact-info .working-hours p {
+    font-size: 1.2rem;
+  }
+  .contact .contact-bottom h1 {
+    font-size: 2rem;
+  }
+  .contact .contact-bottom h3 {
+    font-size: 0.8rem;
+  }
+}
 footer {
   display: flex;
   background-color: #c94343;
@@ -1026,6 +1087,19 @@ button:hover {
   header ul {
     font-size: 0.8rem;
     gap: 1rem;
+  }
+  footer img {
+    width: 100px;
+    height: 90px;
+    margin-top: -3.8rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  footer img {
+    display: none;
+  }
+  footer .left-foot, footer .right-foot {
+    font-size: 0.7rem;
   }
 }
 

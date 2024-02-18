@@ -116,3 +116,91 @@
     }
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .contact {
+    .contact-bottom {
+      width: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .contact {
+    .contact-info {
+      .working-hours {
+        h1 {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .contact-bottom {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contact {
+    .contact-bottom {
+      width: 90%;
+    }
+
+    .contact-info {
+      .contact-top {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    .contact-info {
+      .working-hours {
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contact {
+    .contact-info {
+      padding-bottom: 0;
+
+      .contact-top {
+        margin-bottom: -15rem;
+      }
+
+      .working-hours {
+        h1 {
+          font-size: 2.2rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .contact-bottom {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
