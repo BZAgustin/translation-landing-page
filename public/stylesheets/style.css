@@ -510,6 +510,58 @@
   fill: #EEDDCD;
 }
 
+@media screen and (max-width: 930px) {
+  .companies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #arcadia {
+    padding-top: 4rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .experience {
+    padding: 4rem 0;
+  }
+  .experience-container {
+    gap: 4rem;
+  }
+  .experience-container h1 {
+    font-size: 3rem;
+  }
+  .experience-title {
+    justify-content: center;
+  }
+  .experience-title .stroke {
+    display: none;
+  }
+  .companies #sharp img, .companies #arcadia img, .companies #transperfect img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .companies #sharp img, .companies #arcadia img, .companies #transperfect img {
+    height: 150px;
+  }
+  .companies #arcadia {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  .companies #sharp img, .companies #arcadia img {
+    height: 170px;
+  }
+  .companies #transperfect img {
+    height: 120px;
+  }
+  .companies #arcadia {
+    padding-top: 1rem;
+  }
+  .experience-container h1 {
+    font-size: 1.7rem;
+  }
+}
 .reviews {
   padding: 4rem;
   display: flex;
@@ -543,7 +595,8 @@
 }
 .reviews-container .card {
   display: flex;
-  gap: 3rem;
+  flex-direction: column;
+  gap: 2rem;
   border-radius: 48px;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
   margin: 2rem;
@@ -551,23 +604,11 @@
   background: rgb(246, 239, 233);
   background: linear-gradient(90deg, rgb(246, 239, 233) 0%, rgb(252, 229, 229) 100%);
 }
-.reviews-container .card .card-side {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+.reviews-container .card #kelly p {
+  font-size: 1.6rem;
 }
-.reviews-container .card .card-side img {
-  border-radius: 100%;
-  background-color: white;
-}
-.reviews-container .card .card-separator {
-  background-color: rgb(161, 161, 161);
-  width: 1px;
-  height: 300px;
-  align-self: center;
+.reviews-container .card #colo p {
+  font-size: 1.2rem;
 }
 .reviews-container .card .card-content {
   flex: 3;
@@ -578,17 +619,117 @@
   gap: 2rem;
 }
 .reviews-container .card .card-content p {
+  font-size: 1.2rem;
   text-align: center;
 }
 .reviews-container .card .card-content img {
-  height: 50px;
+  height: 65px;
   width: auto;
 }
-
-#kelly {
-  font-size: 1.2rem;
+.reviews-container .card h3 {
+  color: rgb(29, 29, 29);
+  text-align: right;
+  font-size: 1.4rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .reviews-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 950px) {
+  .reviews .title {
+    margin-right: -11rem;
+  }
+  .reviews .title h1 {
+    font-size: 4rem;
+  }
+  .reviews .circle {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .reviews {
+    padding: 1rem;
+  }
+  .reviews .title {
+    margin-right: -7rem;
+  }
+  .reviews .title h1 {
+    font-size: 3rem;
+  }
+  .reviews .circle {
+    width: 115px;
+    height: 115px;
+  }
+  .reviews-container .card {
+    padding: 2.4rem;
+  }
+  .reviews-container .card #kelly p {
+    font-size: 1.1rem;
+  }
+  .reviews-container .card #colo p {
+    font-size: 1rem;
+  }
+  .reviews-container .card .card-content p {
+    font-size: 1rem;
+  }
+  .reviews-container .card .card-content img {
+    height: 40px;
+  }
+  .reviews-container .card h3 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews {
+    padding: 1rem;
+    padding-top: 4rem;
+  }
+  .reviews .title {
+    margin-right: -6rem;
+  }
+  .reviews .title h1 {
+    font-size: 2.5rem;
+  }
+  .reviews .circle {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .reviews .title {
+    margin-right: -4rem;
+    margin-bottom: -4rem;
+  }
+  .reviews .title h1 {
+    font-size: 2rem;
+  }
+  .reviews .circle {
+    width: 90px;
+    height: 90px;
+  }
+  .reviews-container .card {
+    padding: 1.2rem;
+  }
+  .reviews-container .card #kelly p {
+    font-size: 0.9rem;
+  }
+  .reviews-container .card #colo p {
+    font-size: 0.9rem;
+  }
+  .reviews-container .card .card-content p {
+    font-size: 0.8rem;
+  }
+  .reviews-container .card .card-content img {
+    height: 35px;
+  }
+  .reviews-container .card h3 {
+    font-size: 0.9rem;
+  }
+}
 .contact {
   display: flex;
   background-color: #faeaff;

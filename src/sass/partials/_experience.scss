@@ -93,3 +93,78 @@
 .custom-shape-divider-top-1706026637 .shape-fill {
   fill: #EEDDCD;
 }
+
+@media screen and (max-width: 930px) {
+  .companies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #arcadia {
+    padding-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .experience {
+    padding: 4rem 0;
+
+  }
+
+  .experience-container {
+    gap: 4rem;
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .experience-title {
+    justify-content: center;
+
+    .stroke {
+      display: none;
+    }
+  }
+
+  .companies {
+    #sharp img, #arcadia img, #transperfect img {
+      height: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .companies {
+    #sharp img, #arcadia img, #transperfect img {
+      height: 150px;
+    }
+
+    #arcadia {
+      padding-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .companies {
+    #sharp img, #arcadia img {
+      height: 170px;
+    }
+
+    #transperfect img {
+      height: 120px;
+    }
+
+    #arcadia {
+      padding-top: 1rem;
+    }
+  }
+
+  .experience-container {
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
+}

@@ -35,7 +35,8 @@
 
   .card {
     display: flex;
-    gap: 3rem;
+    flex-direction: column;
+    gap: 2rem;
     border-radius: 48px;
     box-shadow: 1px 1px 6px rgb(0, 0, 0, 0.2);
     margin: 2rem;
@@ -43,26 +44,12 @@
     background: rgb(246,239,233);
     background: linear-gradient(90deg, rgba(246,239,233,1) 0%, rgba(252,229,229,1) 100%);
 
-
-    .card-side {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-
-      img {
-        border-radius: 100%;
-        background-color: white;
-      }
+    #kelly p {
+      font-size: 1.6rem;
     }
 
-    .card-separator {
-      background-color: rgb(161, 161, 161);
-      width: 1px;
-      height: 300px;
-      align-self: center;
+    #colo p {
+      font-size: 1.2rem;
     }
 
     .card-content {
@@ -74,17 +61,159 @@
       gap: 2rem;
 
       p {
+        font-size: 1.2rem;
         text-align: center;
       }
 
       img {
-        height: 50px;
+        height: 65px;
         width: auto;
       }
+    }
+
+    h3 {
+      color: rgb(29, 29, 29);
+      text-align: right;
+      font-size: 1.4rem;
     }
   }
 }
 
-#kelly {
-  font-size: 1.2rem;
+@media screen and (max-width: 1200px) {
+  .reviews-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .reviews {
+    .title {
+      margin-right: -11rem;
+
+      h1 {
+        font-size: 4rem;
+      }
+    }
+
+    .circle {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .reviews {
+    padding: 1rem;
+
+    .title {
+      margin-right: -7rem;
+
+      h1 {
+        font-size: 3rem;
+      }
+    }
+
+    .circle {
+      width: 115px;
+      height: 115px;
+    }
+  }
+
+  .reviews-container {
+    .card {
+      padding: 2.4rem;
+
+      #kelly p {
+        font-size: 1.1rem;
+      }
+  
+      #colo p {
+        font-size: 1rem;
+      }
+
+      .card-content {
+        p {
+          font-size: 1rem;
+        }
+
+        img {
+          height: 40px;
+        }
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reviews {
+    padding: 1rem;
+    padding-top: 4rem;
+
+    .title {
+      margin-right: -6rem;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .circle {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .reviews {
+
+    .title {
+      margin-right: -4rem;
+      margin-bottom: -4rem;
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .circle {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  .reviews-container {
+    .card {
+      padding: 1.2rem;
+
+      #kelly p {
+        font-size: 0.9rem;
+      }
+  
+      #colo p {
+        font-size: 0.9rem;
+      }
+
+      .card-content {
+        p {
+          font-size: 0.8rem;
+        }
+
+        img {
+          height: 35px;
+        }
+      }
+
+      h3 {
+        font-size: 0.9rem;
+      }
+    }
+  }
 }
