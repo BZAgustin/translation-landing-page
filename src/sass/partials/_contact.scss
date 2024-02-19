@@ -4,47 +4,6 @@
   position: relative;
   color: rgb(29, 29, 29);
 
-  .socials {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-    gap: 3rem;
-    padding: 6rem 0;
-    background-color: #eed7d7;
-  }
-
-  .socials-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    gap: 1rem;
-
-    .circle {
-      width: 150px;
-      height: 150px;
-      position: absolute;
-      top: -2rem;
-      left: -6rem;
-    }
-
-    h1 {
-      font-size: 4rem;
-    }
-  }
-
-  .socials-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4rem;
-    align-self: center;
-    text-align: center;
-    width: 70%;
-    font-size: 1.3rem;
-  }
-
   .contact-info {
     display: flex;
     flex-direction: column;
@@ -70,6 +29,7 @@
 
       h1 {
         font-size: 4rem;
+        font-family: 'Quicksand', sans-serif;
       }
 
       p {
@@ -97,6 +57,7 @@
     h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
+      font-family: 'Quicksand', sans-serif;
     }
   }
 

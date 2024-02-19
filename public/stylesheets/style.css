@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Quicksand:wght@300..700&family=Raleway:ital@0;1&display=swap");
 .hero {
   padding: 4rem;
   display: flex;
@@ -7,6 +8,7 @@
   display: flex;
   flex: 1;
   margin-left: -16rem;
+  font-family: "Quicksand", sans-serif;
 }
 .hero .title-container {
   flex: 1;
@@ -183,6 +185,7 @@
 .about-container .content-title {
   font-size: 3rem;
   color: rgb(39, 39, 39);
+  font-family: "Quicksand", sans-serif;
 }
 .about-container .content-text {
   width: 50%;
@@ -246,6 +249,7 @@
   gap: 1.4rem;
   align-items: center;
   margin-left: -14rem;
+  font-family: "Quicksand", sans-serif;
 }
 .services .title h1 {
   font-size: 6rem;
@@ -465,6 +469,7 @@
   display: flex;
   align-items: center;
   gap: 2rem;
+  font-family: "Quicksand", sans-serif;
 }
 
 .companies {
@@ -586,6 +591,7 @@
   gap: 1.4rem;
   align-items: center;
   margin-right: -14rem;
+  font-family: "Quicksand", sans-serif;
 }
 .reviews .title h1 {
   font-size: 6rem;
@@ -748,42 +754,6 @@
   position: relative;
   color: rgb(29, 29, 29);
 }
-.contact .socials {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 1;
-  gap: 3rem;
-  padding: 6rem 0;
-  background-color: #eed7d7;
-}
-.contact .socials-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  gap: 1rem;
-}
-.contact .socials-title .circle {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: -2rem;
-  left: -6rem;
-}
-.contact .socials-title h1 {
-  font-size: 4rem;
-}
-.contact .socials-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 4rem;
-  align-self: center;
-  text-align: center;
-  width: 70%;
-  font-size: 1.3rem;
-}
 .contact .contact-info {
   display: flex;
   flex-direction: column;
@@ -808,6 +778,7 @@
 }
 .contact .contact-info .working-hours h1 {
   font-size: 4rem;
+  font-family: "Quicksand", sans-serif;
 }
 .contact .contact-info .working-hours p {
   font-size: 2rem;
@@ -831,6 +802,7 @@
 .contact .contact-bottom h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  font-family: "Quicksand", sans-serif;
 }
 .contact .contact-list {
   display: flex;
@@ -929,6 +901,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #eeddcd;
+  font-family: "Raleway", sans-serif;
 }
 
 header {
