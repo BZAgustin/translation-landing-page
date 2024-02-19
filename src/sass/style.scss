@@ -13,17 +13,18 @@
   box-sizing: border-box;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   min-height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #eeddcd;
   font-family: 'Raleway', sans-serif;
-  overflow-x: hidden;
 }
 
 header {

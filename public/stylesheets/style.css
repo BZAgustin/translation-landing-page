@@ -600,6 +600,7 @@
 .reviews .circle {
   width: 200px;
   height: 200px;
+  overflow: hidden;
 }
 .reviews .stroke {
   background-color: rgba(126, 126, 126, 0.2);
@@ -892,17 +893,18 @@ footer h3 {
   box-sizing: border-box;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   min-height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #eeddcd;
   font-family: "Raleway", sans-serif;
-  overflow-x: hidden;
 }
 
 header {
