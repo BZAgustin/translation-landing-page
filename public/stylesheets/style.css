@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Quicksand:wght@300..700&family=Raleway:ital@0;1&display=swap");
 .hero {
-  padding: 4rem;
+  padding: 4rem 0 4rem 4rem;
   display: flex;
   flex-direction: column;
 }
@@ -18,7 +18,7 @@
   margin-left: 1rem;
 }
 .hero .title-container h1 {
-  color: rgb(29, 29, 29);
+  color: rgb(39, 39, 39);
   font-size: 8rem;
   line-height: 5rem;
   transition: 300ms;
@@ -38,6 +38,7 @@
   opacity: 20%;
 }
 .hero .paragraph {
+  color: rgb(39, 39, 39);
   font-size: 1.3rem;
   text-align: right;
   margin-right: 3rem;
@@ -188,6 +189,7 @@
   font-family: "Quicksand", sans-serif;
 }
 .about-container .content-text {
+  color: rgb(66, 66, 66);
   width: 50%;
   font-size: 1.4rem;
 }
@@ -267,7 +269,7 @@
 }
 .services .item-container h1 {
   font-size: 2rem;
-  color: rgb(39, 39, 39);
+  color: rgb(124, 45, 45);
 }
 .services .item-text {
   flex: 1;
@@ -320,15 +322,17 @@
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 .info-section h1 {
-  color: rgb(29, 29, 29);
+  color: rgb(36, 36, 36);
   font-size: 5rem;
   text-align: center;
   margin-bottom: 3rem;
 }
 .info-section h2 {
+  color: rgb(36, 36, 36);
   font-size: 2.5rem;
 }
 .info-section p {
+  color: rgb(58, 58, 58);
   font-size: 1.4rem;
 }
 
@@ -638,6 +642,7 @@
   gap: 2rem;
 }
 .reviews-container .card .card-content p {
+  color: rgb(50, 50, 50);
   font-size: 1.2rem;
   text-align: center;
 }
@@ -753,7 +758,7 @@
   display: flex;
   background-color: #faeaff;
   position: relative;
-  color: rgb(29, 29, 29);
+  color: rgb(46, 46, 46);
 }
 .contact .contact-info {
   display: flex;
@@ -844,6 +849,9 @@
   }
   .contact .contact-info .working-hours p {
     font-size: 1.7rem;
+  }
+  .contact .contact-bottom {
+    margin-top: -5rem;
   }
 }
 @media screen and (max-width: 380px) {

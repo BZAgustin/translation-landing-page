@@ -1,5 +1,5 @@
 .hero {
-  padding: 4rem;
+  padding: 4rem 0 4rem 4rem;
   display: flex;
   flex-direction: column;
 
@@ -18,7 +18,7 @@
     margin-left: 1rem;
 
     h1 {
-      color: rgb(29, 29, 29);
+      color: rgb(39, 39, 39);
       font-size: 8rem;
       line-height: 5rem;
       transition: 300ms;
@@ -43,6 +43,7 @@
   }
 
   .paragraph {
+    color: rgb(39, 39, 39);
     font-size: 1.3rem;
     text-align: right;
     margin-right: 3rem;

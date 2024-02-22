@@ -2,7 +2,7 @@
   display: flex;
   background-color: #faeaff;
   position: relative;
-  color: rgb(29, 29, 29);
+  color: rgb(46, 46, 46);
 
   .contact-info {
     display: flex;
@@ -130,6 +130,10 @@
           font-size: 1.7rem;
         }
       }
+    }
+
+    .contact-bottom {
+      margin-top: -5rem;
     }
   }
 }
