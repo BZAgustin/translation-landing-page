@@ -39,7 +39,7 @@
 }
 .hero .paragraph {
   color: rgb(39, 39, 39);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-align: right;
   margin-right: 3rem;
 }
@@ -159,7 +159,7 @@
   flex-direction: column;
   background-color: rgb(241, 235, 245);
   position: relative;
-  background-image: url("/public/images/about-background.jpg");
+  background-image: url("/public/images/about-image.jpeg");
   background-size: contain;
   overflow: hidden;
 }
@@ -180,7 +180,7 @@
   align-items: center;
   flex: 3;
   background: rgb(224, 224, 224);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(235, 233, 240) 10%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(235, 233, 240) 15%);
   position: relative;
 }
 .about-container .content p {
